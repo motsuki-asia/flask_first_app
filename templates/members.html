@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    それぞれのメンバーを表示する
+    <ul>
+        <li>{{ members[0] }}</li>
+        <li>{{ members[1] }}</li>
+        <li>{{ members[2] }}</li>
+    </ul>
+    for分を使って表示
+    <ul>
+        {% for member in members %}
+        <li>{{ member }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
